@@ -49,7 +49,7 @@
                 <configuration>
                     <!-- Point to your TestNG suite file -->
                     <suiteXmlFiles>
-                        <suiteXmlFile>src/test/java/testng.xml</suiteXmlFile>
+                        <suiteXmlFile>testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
                     <!-- Reports will be generated in target/surefire-reports -->
                     <reportsDirectory>${project.build.directory}/surefire-reports</reportsDirectory>
