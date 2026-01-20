@@ -39,5 +39,24 @@
         </dependency>
 
     </dependencies>
+    <build>
+        <plugins>
+            <!-- Surefire plugin to run TestNG tests -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.2.5</version>
+                <configuration>
+                    <!-- Point to your TestNG suite file -->
+                    <suiteXmlFiles>
+                        <suiteXmlFile>src/test/java/testng.xml</suiteXmlFile>
+                    </suiteXmlFiles>
+                    <!-- Reports will be generated in target/surefire-reports -->
+                    <reportsDirectory>${project.build.directory}/surefire-reports</reportsDirectory>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
 
 </project>
